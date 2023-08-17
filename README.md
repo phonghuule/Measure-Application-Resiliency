@@ -107,7 +107,9 @@ This failure injection will simulate a critical problem with one of the two web 
 
       ![EC2InitialCheck](/Images/EC2InitialCheck.png)
 1. Open up two more console in separate tabs/windows. From the left pane, open **Target Groups** and **Auto Scaling Groups** in separate tabs. You now have two console views open
+
       ![NavToTargetGroupAndScalingGroup](/Images/NavToTargetGroupAndScalingGroup.png)
+
 1. Download the file [fail_instance.py](https://awsinnovatefea2022.s3.amazonaws.com/measure-application-resiliency/fail_instance.py), you will use this file later to inject failure into your environment
 1. Navigate to [AWS CloudShell](https://us-east-2.console.aws.amazon.com/cloudshell/home?region=us-east-2#) and wait for **AWS CloudShell** to create environment
 
@@ -135,10 +137,12 @@ i-0c4f71684a880cf1e
 9. Go to the *EC2 Instances* console which you already have open (or [click here to open a new one](http://console.aws.amazon.com/ec2/v2/home?#Instances:))
 
       * Refresh it. (_Note_: it is usually more efficient to use the refresh button in the console, than to refresh the browser)
-       ![RefreshButton](/Images/RefreshButton.png)
+
+      ![RefreshButton](/Images/RefreshButton.png)
+      
       * Observe the status of the instance reported by the script. In the screen cap below it is _shutting down_ as reported by the script and will ultimately transition to _terminated_.
 
-        ![EC2ShuttingDown](/Images/EC2ShuttingDown.png)
+      ![EC2ShuttingDown](/Images/EC2ShuttingDown.png)
 
 ### 2.2 System response to EC2 instance failure
 
